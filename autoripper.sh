@@ -151,7 +151,6 @@ while true; do
 	
 	echo
 	echo
-	# -t timeout, -N one char
 	echo "Press (q) to quit"
 
 	read -t 1 -N 1 input
