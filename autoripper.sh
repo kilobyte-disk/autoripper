@@ -1,4 +1,5 @@
-#
+#!/bin/bash
+
 # kilobyte_disk 2025
 # autoripper.sh
 #
@@ -6,7 +7,6 @@
 # a script to automatically rip CDs when
 # they are inserted into drives.
 
-#!/bin/bash
 
 CDROM_PREFIX=/dev/sr
 
