@@ -26,11 +26,11 @@ as the previous outputs are kept for debugging. Delete them once in a while if t
 - it no work! :(
 Here is a list of things that may be wrong.<br>
 
-P: The ```drivestatus``` executable may be broken or non-executable.
+P: The ```drivestatus``` executable may be broken or non-executable.<br>
 S: Check if ```./programs/drivestatus``` exists. If not, recompile it with the source file.
     Otherwise, set file permissions appropriately. (```chmod +x ./programs/drivestatus```)
 
-P: It may not be detecting optical drives correctly.
+P: It may not be detecting optical drives correctly.<br>
 S: Edit ```autoripper.sh``` and change the CDROM_PREFIX variable to the directory that the drives are located.
     Usually it is /dev/sr0, /dev/sr1 and so forth, so it is set to /dev/sr* by default.
 
