@@ -22,6 +22,20 @@ you may have to monitor the output to check for failed processes.
 The abcde log files that are created while the script is running will always grow in size,
 as the previous outputs are kept for debugging. Delete them once in a while if they get too large.
 
+# troubleshooting
+- it no work! :(
+Here is a list of things that may be wrong.<br>
+
+P: The ```drivestatus``` executable may be broken or non-executable.
+S: Check if ```./programs/drivestatus``` exists. If not, recompile it with the source file.
+    Otherwise, set file permissions appropriately. (```chmod +x ./programs/drivestatus```)
+
+P: It may not be detecting optical drives correctly.
+S: Edit ```autoripper.sh``` and change the CDROM_PREFIX variable to the directory that the drives are located.
+    Usually it is /dev/sr0, /dev/sr1 and so forth, so it is set to /dev/sr* by default.
+
+
+
 # dependencies (software)
 - abcde
 - flac
